@@ -10,6 +10,11 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #ffff00;
+}
+
 /* HEADER */
 
 header{
@@ -37,9 +42,8 @@ header nav ul li a{
   color: black;
   text-decoration: none;
   text-align: center;
-  font-weight: bold;
   box-shadow: 1px 1px 3px black
-
+  
 }
 
 header nav ul li a:hover{
@@ -54,64 +58,39 @@ header nav ul li a:active{
 
 /* MAIN - IMAGES AND TEXT */
 
-.box{
+section{
   height: 100vh;
   position: relative;
 }
 
-.image-txt-container{
-  height: 600px;
-  width: 600px;
+img{
+  width: 100%;
+}
+
+.block{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.image{
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.image-txt-container h2{
-  position: absolute;
-  bottom: 0px;
-  left: 50px;
-  color: #ffff00;
-  font-size: 45px;
   text-align: center;
+}
+
+.block .txt{
+  font-size: 3vw;
 }
 
 
 /* MAIN - COLORS */
 
-.first.box{
+#first-shoe{
   background-color: #ff0000;
 }
 
-.second.box{
+#second-shoe{
   background-color: #008000;
 }
 
-.third.box{
+#third-shoe{
   background-color: #ffff00;
-}
-
-.image.one{
-  background-image: url('../img/01.png');
-}
-
-.image.two{
-  background-image: url('../img/02.png');
-}
-
-.image.three{
-  background-image: url('../img/03.png');
-}
-
-#txt-different-color{
   color: #008000;
 }
